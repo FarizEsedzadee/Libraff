@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libraff</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <header class="bg-gray-50">
+        <div class="top max-w-[1460px] mx-auto py-[40px] flex items-center justify-between">
+            <div class="left">
+                <img src="./assets/img/logo.png" alt="Libraff Logo" class="w-[175px]">
+            </div>
+            <div class="center w-[50%] flex items-center gap-[20px]">
+                <button
+                    class="flex items-center justify-center h-[44px] px-[25px] bg-[#EF3340] text-white text-base rounded-[24px] shadow-[inset_0_0_10px_rgba(0,0,0,0.05)]">
+                    <i class="fa-solid fa-border-all"></i> <span class="font-bold ms-[5px]">Kataloq</span></button>
+                <label class="relative block w-full">
+                    <input type="text" placeholder="Növbəti kitabınızı axtarın"
+                        class="w-full border rounded-[24px] p-[7px_40px_7px_15px] border-2 border-[#cbd5e1] focus:shadow-lg outline-none">
+                    <i
+                        class="fa-solid fa-magnifying-glass absolute top-1/2 right-4 -translate-y-1/2 text-gray-500 pointer-events-none"></i>
+                </label>
+            </div>
+            <div class="right flex items-center justify-center gap-4">
+                <span>AZ <i class="fa-solid fa-angle-down"></i></span>
+                <button class="flex items-center gap-1 h-[44px] px-[15px] bg-[#F4F6FC] rounded-[24px] text-[14px]"><i
+                        class="fa-solid fa-circle-user text-[25px]"></i> <span>Hesabım</span> <i
+                        class="text-[15px] fa-solid fa-angle-down"></i></button>
+                <span><i class="fa-regular fa-heart text-[25px]"></i></span>
+                <span><i class="fa-solid fa-cart-arrow-down text-[20px]"></i></span>
+            </div>
+        </div>
+        <div class="bottom max-w-[1460px] mx-auto flex items-center justify-between">
+            <div class="left">
+                <ul class="flex items-center gap-3 font-bold text-[15px] text-[#334155]">
+                    <li>Bestseller - İyul</li>
+                    <li>Endirimlər</li>
+                    <li>Müəlliflər</li>
+                    <li>Klassiklər</li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul class="flex items-center gap-3 font-[300] text-[15px] text-[#334155]">
+                    <li>Ödəniş və çatdırılma</li>
+                    <li>Loyallıq kartı</li>
+                    <li>FAQ</li>
+                    <li>Əlaqə</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-10 px-4 bg-gray-50 min-h-screen">
+        <div class="max-w-[1460px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800">Bugünün Seçimləri</h2>
+            <ul class="flex items-center gap-3 text-sm font-medium text-gray-600">
+                <li>
+                    <button
+                        class="px-3 py-1 rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Azərbaycan</button>
+                </li>
+                <li>
+                    <button class="px-3 py-1 rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Rusca</button>
+                </li>
+                <li>
+                    <button
+                        class="px-3 py-1 rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Türkçə</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="max-w-[1460px] mx-auto">
+            <div id="books"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6">
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
