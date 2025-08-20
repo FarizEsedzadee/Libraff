@@ -26,7 +26,6 @@ fetch("http://localhost:3000/kitablar")
 
     <div class="flex items-center justify-between">
       <span class="text-2xl font-semibold text-gray-900">${item.price.amount} ${item.price.currency}</span>
-      <button class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 transition">Add to cart</button>
     </div>
   </div>
 </div>`
